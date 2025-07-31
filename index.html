@@ -11,35 +11,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Comic+Neue:wght@700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Dra. Karina Cervantes Odontopediatría</h1>
-        <p>¡Cuidando los dientes de los pequeños, creando grandes sonrisas!</p>
+        <div class="header-image">
+            <img src="./img/banner.png" width="600px" height="350px" style="margin-top: 1em;"></img>
+            <!-- <p style="color: black;">Cuidando la sonrisa de los más pequeños</p> -->
+        </div>
     </header>
     <nav>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#services">Servicios</a>
-        <a href="#first-visit">Primera Visita</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contacto</a>
-        <a href="#faq">Preguntas Frecuentes</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-menu">
+            <a href="#about">SOBRE NOSOTROS</a>
+            <a href="#services">SERVICIOS</a>
+            <a href="#first-visit">PRIMERA VISITA</a>
+            <a href="#contact">CONTACTO</a>
+        </div>
     </nav>
-
     <div class="hero">
         <div class="hero-text">
             <h1>¡Bienvenidos al consultorio de la Dra. Karina Cervantes!</h1>
             <p>Nuestro equipo amigable está dedicado a brindar atención dental suave y compasiva para bebés, niños y
                 adolescentes en un ambiente divertido y seguro. ¡Hagamos que la visita al dentista sea una experiencia
                 positiva!</p>
-            <a href="#contact"
-                style="background:hsl(301, 86%, 75%);color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Agendar
+            <a href="https://wa.me/525519184879?text=Hola%20quisiera%20agendar%20una%20cita%20para%20mi%20hijo/a"
+                target="_blank"
+                style="background:#5ab8c2;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Agendar
                 una Cita</a>
         </div>
         <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=400&q=80"
-                alt="Niño feliz en el dentista">
+            <img src="img/welcome_portrait.JPG" alt="Dra Karina en su consultorio">
         </div>
     </div>
 
@@ -68,53 +79,62 @@
             </div>
         </div>
     </section>
-
     <section class="cta" id="first-visit">
         <h2>¿Es la primera visita de tu hijo?</h2>
         <p style="margin-inline: 3em;">Descubre qué esperar y cómo hacemos que la experiencia sea divertida y cómoda
             para niños y padres.</p>
-        <a href="#first-visit">Guía de la Primera Visita</a>
+        <a href="#first-visit" style="background:#5ab8c2;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Guía de la Primera Visita</a>
     </section>
-
     <section class="reviews-section">
         <h2>Opiniones en Google Maps</h2>
         <div class="reviews">
             <div class="review-card">
                 <div class="review-rating">★★★★★</div>
-                <p>Excelente atención, mi hija perdió el miedo al dentista. Muy recomendados y muy pacientes.</p>
-                <div class="review-author">— Laura M.</div>
+                <p>Agradezco mucho que haya atendido a mi hijo, es una doctora muy humana y sabe tratar a los pequeños,
+                    excelente atención, nos explicó todas nuestras dudas y sobretodo hizo que mi hijo se sintiera seguro
+                    con ella. Muchas gracias doctora!!</p>
+                <div class="review-author">— Daniela T.</div>
             </div>
             <div class="review-card">
                 <div class="review-rating">★★★★★</div>
-                <p>¡El consultorio es hermoso y los doctores muy amables! Mi hijo se sintió muy cómodo durante su
-                    visita.</p>
-                <div class="review-author">— Carlos R.</div>
+                <p>Fue la segunda visita odontopediátrica de mi toddler de 2 años y estuvo excelente! La Dra. Kari tiene
+                    mucha paciencia, nos explica y aclara todas las dudas que tenemos. La atención que tiene con mi
+                    pequeño es totalmente personalizada. La clínica está súper limpia y la recomiendo ampliamente.</p>
+                <div class="review-author">— Rebeca Y.</div>
             </div>
             <div class="review-card">
                 <div class="review-rating">★★★★★</div>
-                <p>Nos encantó la experiencia, explican todo con claridad y los niños se divierten mientras aprenden a
-                    cuidar sus dientes.</p>
-                <div class="review-author">— Andrea P.</div>
+                <p>Conozco a la doctora Kari desde hace 10 años, y ha sido mi dentista desde entonces, ahora que tengo a
+                    mi bebé es su odontopediatra por excelencia, es amable, atenta, capaz y tiene los conocimientos que
+                    uno espera para atender a sus hijos, la recomiendo ampliamente para aquellos papás que quieran la
+                    mejor atención para sus pequeños</p>
+                <div class="review-author">— Lily V.</div>
             </div>
         </div>
-        <a class="google-link" href="https://www.google.com/maps/place/Sonrisas+Felices+Odontopediatría"
+        <a class="google-link"
+            href="https://www.google.com/maps/place/Dra.+Karina+Cervantes+%7C+Odontopediatra+CDMX/@19.3954296,-99.1766687,17z/data=!4m18!1m9!3m8!1s0x85d1ff6c3441acc9:0x1ae1047d51a81bf1!2sDra.+Karina+Cervantes+%7C+Odontopediatra+CDMX!8m2!3d19.3954246!4d-99.1740938!9m1!1b1!16s%2Fg%2F11y2t_1c23!3m7!1s0x85d1ff6c3441acc9:0x1ae1047d51a81bf1!8m2!3d19.3954246!4d-99.1740938!9m1!1b1!16s%2Fg%2F11y2t_1c23?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
             target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Google_Maps_Logo_2020.svg" alt="Google logo">
             Leer más opiniones en Google Maps
         </a>
     </section>
-
-    <section id="about">
-        <h2 style="color:#2d98da;text-align:center;">Conoce a la Dra. Karina y su Equipo</h2>
-        <p style="max-width:700px;margin:0 auto 25px auto;text-align:center;">
-            La Dra.Karina Cervantes es odontopediatra certificada con más de 10 años de experiencia ayudando a niños a
-            desarrollar sonrisas saludables. Nuestro equipo está comprometido a hacer que la atención dental sea libre
-            de estrés para las familias.
-        </p>
+    <section id="about" class="hero">
+        <div class="hero-text">
+            <h2 style="color:#2d98da;text-align:center;">Conoce a la Dra. Karina y su Equipo</h2>
+            <p>La Dra.Karina Cervantes es odontopediatra certificada con más de 10 años de experiencia ayudando a niños
+                a
+                desarrollar sonrisas saludables. Nuestro equipo está comprometido a hacer que la atención dental sea
+                libre
+                de estrés para las familias.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="img/about.JPG" alt="Dra Karina en su consultorio">
+        </div>
     </section>
 
     <!-- BLOG SECTION -->
-    <section class="blog-section" id="blog">
+    <!-- <section class="blog-section" id="blog">
         <h2>Blog: Consejos y Noticias</h2>
         <div class="blog-entries">
             <div class="blog-entry">
@@ -136,37 +156,67 @@
                 <a href="#">Leer más</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- END BLOG SECTION -->
 
-    <section id="contact">
-        <h2 style="color:#2d98da;text-align:center;">Contacto y Ubicación</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.392858738362!2d-99.1740938!3d19.395424599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6c3441acc9%3A0x1ae1047d51a81bf1!2sDra.%20Karina%20Cervantes%20%7C%20Odontopediatra%20CDMX!5e0!3m2!1sen!2smx!4v1753316203902!5m2!1sen!2smx"
-            width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p style="max-width:700px;margin:0 auto 20px auto;text-align:center;">
-            Montecito 38-Piso 26 Oficina 10, Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX<br>
-            <a href="tel:+525519184879" style="color:#2d98da;">(55)19184879</a> &nbsp; | &nbsp;
-            <a href="mailto:cervantes.lara.karina@gmail.com"
-                style="color:#2d98da;">cervantes.lara.karina@gmail.com</a><br>
-            <a href="https://wa.me/525519184879?text=Hola%20quisiera%20agendar%20una%20cita%20para%20mi%20hijo/a"
-                target="_blank"
-                style="display:inline-block;background:#25d366;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:10px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                    style="width:22px;vertical-align:middle;margin-right:8px;">Chatea por WhatsApp
-            </a>
-        </p>
+    <section id="contact" class="hero">
+        <div class="hero-text">
+            <h1>Contacto y Ubicación</h1>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.392858738362!2d-99.1740938!3d19.395424599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6c3441acc9%3A0x1ae1047d51a81bf1!2sDra.%20Karina%20Cervantes%20%7C%20Odontopediatra%20CDMX!5e0!3m2!1sen!2smx!4v1753316203902!5m2!1sen!2smx"
+                allowfullscreen="" width="90%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p style="font-weight: bold;">
+                ¡Nos encontramos dentro del WTC!<br>
+            </p>
+            <p>
+                Montecito 38-Piso 26 Oficina 10, Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX<br>
+                <a href="tel:+525519184879" style="color:#2d98da;">(55)19184879</a>
+                <!-- <a href="mailto:cervantes.lara.karina@gmail.com"
+                    style="color:#2d98da;">cervantes.lara.karina@gmail.com</a><br> -->
+            </p>
+            <h3>Horarios:</h3>
+            <p>
+                Lunes a Viernes: 9am - 8pm<br>
+                Sábados: 9am - 5pm<br>
+                Domingos: Cerrado<br>
+                <a href="https://wa.me/525519184879?text=Hola%20quisiera%20agendar%20una%20cita%20para%20mi%20hijo/a"
+                    target="_blank"
+                    style="display:inline-block;background:#25d366;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                        style="width:22px;vertical-align:middle;margin-right:8px;">Chatea por WhatsApp
+                </a>
+            </p>
+        </div>
         <!-- <p style="text-align:center;">
             <a href="#contact"
                 style="background:#ffb347;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Agendar
                 una Cita</a>
         </p> -->
     </section>
-
+    <a href="https://wa.me/525519184879?text=Hola%20quisiera%20agendar%20una%20cita%20para%20mi%20hijo/a" class="float"
+        target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <footer>
         &copy; 2025 Dra. Karina Cervantes Odontopediatría. Todos los derechos reservados.
     </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
