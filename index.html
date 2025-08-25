@@ -57,25 +57,45 @@
     <section id="services">
         <h2 style="text-align:center; color:#2d98da;">Nuestros Servicios de Odontopediatría</h2>
         <div class="features">
-            <div class="feature-card">
-                <h3>Cuidado Preventivo</h3>
-                <p>Limpiezas, fluor, selladores y educación para mantener las sonrisas saludables.</p>
+            <div class="feature-card" data-service="prevencion">
+                <div class="card-front">
+                    <h3>PREVENCIÓN</h3>
+                    <p>Limpieza dental, aplicaciones tópicas de fluoruro, selladores de fosetas y fisuras, asesoría de lactancia y odontología del bebé</p>
+                </div>
+                <div class="card-back">
+                    <img src="img/preventivo.png" alt="Prevención" style="width:80px;height:80px;margin-bottom:10px;">
+                    <p>La prevención ayuda a evitar problemas futuros y promueve una salud bucal óptima desde el nacimiento. Enseñamos a los padres y niños cómo cuidar sus dientes y mantener una sonrisa sana desde el primer día.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <h3>Tratamientos Restaurativos Suaves</h3>
-                <p>Resinas, coronas y extracciones suaves para dientes en crecimiento.</p>
+            <div class="feature-card" data-service="rehabilitacion">
+                <div class="card-front">
+                    <h3>REHABILITACIÓN</h3>
+                    <p>Resinas, coronas estéticas, coronas de acero cromo, pulpotomías, pulpectomías, extracciones, mantenedores de espacio.</p>
+                </div>
+                <div class="card-back">
+                    <img src="img/rehabilitacion.png" alt="Rehabilitación" style="width:80px;height:80px;margin-bottom:10px;">
+                    <p>Restauramos la función y estética dental de los niños con técnicas modernas y materiales seguros, asegurando que puedan comer, hablar y sonreír con confianza.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <h3>Urgencias Dentales</h3>
-                <p>Citas el mismo día para dolor dental, lesiones u otras emergencias.</p>
+            <div class="feature-card" data-service="ortopedia">
+                <div class="card-front">
+                    <h3>ORTOPEDIA</h3>
+                    <p>Aparatología funcional, expansores fijos, reeducadores de hábitos</p>
+                </div>
+                <div class="card-back">
+                    <img src="img/ortopedia.png" alt="Ortopedia" style="width:80px;height:80px;margin-bottom:10px;">
+                    <p>La ortopedia ayuda a guiar el crecimiento y desarrollo de los maxilares, corrigiendo hábitos y favoreciendo una correcta alineación dental desde edades tempranas.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <h3>Consejería de Hábitos</h3>
-                <p>Apoyo para dejar el chupón, chuparse el dedo y mejorar la higiene oral.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Evaluación Ortodóntica</h3>
-                <p>Valoración temprana para alineación dental y uso de brackets.</p>
+            <div class="feature-card" data-service="frenillo">
+                <div class="card-front">
+                    <h3>FRENILLO LINGUAL</h3>
+                    <p>Frenillo restrictivo, cirugía y terapia miofuncional.</p>
+                </div>
+                <div class="card-back">
+                    <img src="img/frenillo.png" alt="Frenillo Lingual" style="width:80px;height:80px;margin-bottom:10px;">
+                    <p>El diagnóstico y tratamiento oportuno del frenillo lingual permite mejorar la alimentación, el habla y el desarrollo orofacial, combinando cirugía y terapia especializada para resultados óptimos.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -121,12 +141,14 @@
     <section id="about" class="hero">
         <div class="hero-text">
             <h2 style="color:#2d98da;text-align:center;">Conoce a la Dra. Karina y su Equipo</h2>
-            <p>La Dra.Karina Cervantes es odontopediatra certificada con más de 10 años de experiencia ayudando a niños
-                a
-                desarrollar sonrisas saludables. Nuestro equipo está comprometido a hacer que la atención dental sea
-                libre
-                de estrés para las familias.
-            </p>
+            <h3>¡Hola! Soy Karina Cervantes</h3>
+                <p>Soy especialista en Odontopediatría, realicé un diplomado en ortopedia maxilar. Me dedico con mucho cariño a cuidar la sonrisa de bebés, niños y adolescentes.</p>
+                <p>Mi objetivo es que cada visita al dentista sea una experiencia positiva, donde los pequeños se sientan seguros, tranquilos y felices.</p>
+                <p>Creo que una sonrisa sana empieza desde la infancia, por eso acompaño a los papás en cada etapa para enseñar buenos hábitos y asegurar que sus hijos crezcan con dientes fuertes y una sonrisa llena de confianza.</p>
+                <h3>🌟 Misión</h3>
+                <p>Ofrecer atención odontopediátrica especializada, centrada en la prevención de caries, el crecimiento armónico del maxilar y la revisión oportuna del frenillo lingual, brindando a cada niño un cuidado integral que favorezca su salud bucal y contribuya a una mejor calidad de vida, en un ambiente de confianza y calidez.</p>
+                <h3>🌈 Visión</h3>
+                <p>Consolidarnos como un consultorio de referencia en odontopediatría, reconocido por formar generaciones con sonrisas sanas y libres de caries, impulsando el desarrollo bucal adecuado y promoviendo hábitos que acompañen a los niños durante toda su vida, siempre con un trato humano y cercano a las familias.</p>
         </div>
         <div class="about-img">
             <img src="img/about.JPG" alt="Dra Karina en su consultorio">
@@ -200,23 +222,7 @@
     <footer>
         &copy; 2025 Dra. Karina Cervantes Odontopediatría. Todos los derechos reservados.
     </footer>
-    <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            const hamburger = document.querySelector('.hamburger');
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                const navMenu = document.querySelector('.nav-menu');
-                const hamburger = document.querySelector('.hamburger');
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-    </script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
